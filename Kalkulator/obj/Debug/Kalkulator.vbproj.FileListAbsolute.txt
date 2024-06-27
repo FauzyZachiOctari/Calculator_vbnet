@@ -1,0 +1,25 @@
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.exe.config
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.exe
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.pdb
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\bin\Debug\Kalkulator.xml
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbprojAssemblyReference.cache
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.Form1.resources
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.Resources.resources
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbproj.GenerateResource.cache
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbproj.CoreCompileInputs.cache
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.exe
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.xml
+C:\Users\^_^\source\repos\Kalkulator\Kalkulator\obj\Debug\Kalkulator.pdb
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\bin\Debug\Kalkulator.exe.config
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\bin\Debug\Kalkulator.exe
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\bin\Debug\Kalkulator.pdb
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\bin\Debug\Kalkulator.xml
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbproj.AssemblyReference.cache
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbproj.SuggestedBindingRedirects.cache
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.Form1.resources
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.Resources.resources
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbproj.GenerateResource.cache
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.vbproj.CoreCompileInputs.cache
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.exe
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.xml
+T:\23. PROGRAMMER\Fauzi\Kerjaan Fauzi\Kalkulator\Kalkulator\obj\Debug\Kalkulator.pdb
