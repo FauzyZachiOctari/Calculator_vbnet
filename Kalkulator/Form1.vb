@@ -1,9 +1,9 @@
 ﻿Public Class Form1
-    Dim Angka1, Angka2 As Single
+    Dim Angka1 As Single
     Dim operasi As String
 
     Private Sub txthasil_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txthasil.KeyPress
-        If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+        If Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsDigit(e.KeyChar) Then
             e.Handled = True
             MessageBox.Show("Masukkan Angka", "Peringatan")
         End If
@@ -53,47 +53,58 @@
         If txthasil.Text = "" Then Exit Sub
         Angka1 = CSng(txthasil.Text)
         operasi = "+"
-        txthasil.Clear()
+        txthasil.Text &= " " & operasi & " "
+        txthasil.Show()
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles btnkurang.Click
         If txthasil.Text = "" Then Exit Sub
         Angka1 = CSng(txthasil.Text)
         operasi = "-"
-        txthasil.Clear()
+        txthasil.Text &= " " & operasi & " "
+        txthasil.Show()
     End Sub
 
     Private Sub btnkali_Click(sender As Object, e As EventArgs) Handles btnkali.Click
         If txthasil.Text = "" Then Exit Sub
         Angka1 = CSng(txthasil.Text)
         operasi = "*"
-        txthasil.Clear()
+        txthasil.Text &= " " & operasi & " "
+        txthasil.Show()
     End Sub
 
     Private Sub btnbagi_Click(sender As Object, e As EventArgs) Handles btnbagi.Click
         If txthasil.Text = "" Then Exit Sub
         Angka1 = CSng(txthasil.Text)
         operasi = "/"
-        txthasil.Clear()
+        txthasil.Text &= " " & operasi & " "
+        txthasil.Show()
     End Sub
 
     Private Sub btnsqry_Click(sender As Object, e As EventArgs)
         If txthasil.Text = "" Then Exit Sub
         Angka1 = CSng(txthasil.Text)
         operasi = "^"
-        txthasil.Clear()
+        txthasil.Text &= " " & operasi & " "
+        txthasil.Show()
     End Sub
 
     Private Sub btnmodulus_Click(sender As Object, e As EventArgs) Handles btnmodulus.Click
         If txthasil.Text = "" Then Exit Sub
         Angka1 = CSng(txthasil.Text)
         operasi = "Mod"
-        txthasil.Clear()
+        txthasil.Text &= " " & operasi & " "
+        txthasil.Show()
+    End Sub
+
+    Private Sub btnc_Click(sender As Object, e As EventArgs) Handles btnc.Click
+        txthasil.Text = ""
     End Sub
 
     Private Sub Button22_Click(sender As Object, e As EventArgs) Handles btnequals.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
-        Angka2 = CSng(txthasil.Text)
+        Dim Angka2 As Single = CSng(txthasil.Text.Substring(txthasil.Text.LastIndexOf(" ") + 1))
         Select Case operasi
             Case "+"
                 hasil = Angka1 + Angka2
@@ -116,6 +127,7 @@
     End Sub
 
     Private Sub btnsqr2_Click(sender As Object, e As EventArgs) Handles btnsqr2.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Pow(Angka1, 2)
@@ -123,6 +135,7 @@
     End Sub
 
     Private Sub btnsqr3_Click(sender As Object, e As EventArgs) Handles btnsqr3.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Pow(Angka1, 3)
@@ -130,6 +143,7 @@
     End Sub
 
     Private Sub Button19_Click(sender As Object, e As EventArgs) Handles btnsqrt.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Sqrt(Angka1)
@@ -137,6 +151,7 @@
     End Sub
 
     Private Sub btnpersen_Click(sender As Object, e As EventArgs) Handles btnpersen.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Angka1 / 100
@@ -144,6 +159,7 @@
     End Sub
 
     Private Sub btntan_Click(sender As Object, e As EventArgs)
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Dim phi As Single
         phi = 3.14159265
@@ -153,6 +169,7 @@
     End Sub
 
     Private Sub btncos_Click(sender As Object, e As EventArgs)
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Dim phi As Single
         phi = 3.14159265
@@ -162,6 +179,7 @@
     End Sub
 
     Private Sub btnsin_Click(sender As Object, e As EventArgs)
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Dim phi As Single
         phi = 3.14159265
@@ -171,6 +189,7 @@
     End Sub
 
     Private Sub btnlog_Click(sender As Object, e As EventArgs) Handles btnlog.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Log10(Angka1)
@@ -178,6 +197,7 @@
     End Sub
 
     Private Sub btntanh_Click(sender As Object, e As EventArgs) Handles btntanh.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Tanh(Angka1)
@@ -185,6 +205,7 @@
     End Sub
 
     Private Sub btnconh_Click(sender As Object, e As EventArgs) Handles btncosh.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Cosh(Angka1)
@@ -192,6 +213,7 @@
     End Sub
 
     Private Sub btnsinh_Click(sender As Object, e As EventArgs) Handles btnsinh.Click
+        If txthasil.Text = "" Then Exit Sub
         Dim hasil As Single
         Angka1 = CSng(txthasil.Text)
         hasil = Math.Sinh(Angka1)
@@ -207,10 +229,6 @@
         End If
     End Sub
 
-    Private Sub btnc_Click(sender As Object, e As EventArgs) Handles btnc.Click
-        txthasil.Text = ""
-    End Sub
-    
 
     Private Sub btnback_Click(sender As Object, e As EventArgs) Handles btnback.Click
         Me.Close()
